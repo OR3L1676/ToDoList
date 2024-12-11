@@ -1,0 +1,106 @@
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: cornflowerblue;
+}
+
+.toDoList {
+  width: 400px;
+  height: 450px;
+  background-color: white;
+  border-radius: 15px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 5fr;
+}
+
+.toDoList__header {
+  align-self: center;
+  font-size: 30px;
+  font-family: cursive;
+  padding: 10px;
+}
+
+.toDoList__input {
+  position: relative;
+  padding: 10px 20px;
+}
+
+.toDoList__input input {
+  width: 90%;
+  border-radius: 30px;
+  height: 100%;
+  border: none;
+  background-color: rgb(240, 240, 240);
+  padding-left: 20px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+.toDoList__input button {
+  position: absolute;
+  height: 46px;
+  width: 80px;
+  border-radius: 30px;
+  border: none;
+  top: 0px;
+  right: -3px;
+  margin: 10px 20px;
+  background-color: cornflowerblue;
+  color: white;
+}
+
+.toDoList__input button:hover {
+  cursor: pointer;
+  opacity: 90%;
+}
+
+.toDoList__tasks {
+  padding: 0 23px 23px 40px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  margin: 30px 3px 20px 0;
+}
+
+.toDoList__tasks-li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  height: 20px;
+  border-bottom: 2px dashed rgb(0, 0, 0, 20%);
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.toDoList__tasks-button {
+  border: none;
+  background-color: white;
+  font-size: 15px;
+}
+
+.toDoList__tasks-button:hover {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: cornflowerblue;
+  border-radius: 10px;
+}
