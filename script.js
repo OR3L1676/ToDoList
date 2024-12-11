@@ -10,7 +10,6 @@ function createTaskObject(text) {
 function displayTasks() {
   let listElement = document.getElementsByClassName("toDoList__tasks")[0];
   listElement.innerHTML = "";
-  //   const list2 = listElement.appendChild(`<li class="toDoList__tasks-li" id="${task.id}">${task.text} <button onclick="deleteTask(${task.id})" id="${task.id}" class="toDoList__tasks-button">X</button></li>`)
   const list = tasks
     .map(
       (task) =>
